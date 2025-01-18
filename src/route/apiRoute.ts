@@ -1,8 +1,7 @@
 import express, { Request, Response } from "express";
 
-import getRoute from "./getRoute";
-import createRoute from "./createRoute";
-import deleteRoute from "./deleteRoute";
+import playerRoute from "./playerRoute";
+import serverRoute from "./serverRoute";
 
 const router = express.Router();
 
@@ -12,8 +11,7 @@ router.get("/", (request: Request, response: Response) => {
   });
 });
 
-router.use("/get", getRoute);
-router.use("/create", createRoute);
-router.use("/delete", deleteRoute);
+router.use("/player", playerRoute);
+router.use("/server", serverRoute);
 
 export default router;
