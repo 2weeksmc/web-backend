@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/2weeksmc/web-backend#readme",
   "dependencies": {
+    "2weeksmc-backend": "file:",
     "express": "^4.21.2",
     "mongodb": "^6.12.0"
   },
